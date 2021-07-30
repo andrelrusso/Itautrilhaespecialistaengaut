@@ -5,8 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfModuloDesSoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Loaded="Window_Loaded" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="270"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="10" Grid.Row="0" Grid.Column="0">
+                <Label  Content="IdCliente" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtIdCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="0" Grid.Column="1">
+                <Label Content="NomeCliente" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtNomeCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="1" Grid.Column="0">
+                <Label  Content="RG" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtRGCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
+                <Label  Content="CPF" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtCPFCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="2" Grid.Column="0">
+                <Label  Content="Endereço" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtEnderecoCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="2" Grid.Column="1">
+                <Label  Content="Produto" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtProdutoCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="3" Grid.Column="0">
+                <Label  Content="Preço Venda" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="txtPrecoVendaCliente" HorizontalAlignment="Left"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnInserir"  Margin="15" Width="50" Content="Inserir" Click="btnInserir_Click" />
+                    <Button x:Name="btnAlterar"  Margin="15" Width="50" Content="Alterar" Click="btnAlterar_Click" />
+                    <Button x:Name="btnExcluir"  Margin="15" Width="50" Content="Excluir" Click="btnExcluir_Click" />
+                    <Button x:Name="btnBuscar"  Margin="15" Width="50" Content="Buscar" Click="btnBuscar_Click" />
+                    <Button x:Name="btnLimpar"  Margin="15" Width="50" Content="Limpar" Click="btnLimpar_Click" />
 
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="41*"/>
+                <ColumnDefinition Width="159*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="GridCliente"  ItemsSource="{Binding Source=ListClientes}" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" CanUserSortColumns="False" Grid.ColumnSpan="2">
+
+            </DataGrid>
+        </Grid>
     </Grid>
 </Window>
