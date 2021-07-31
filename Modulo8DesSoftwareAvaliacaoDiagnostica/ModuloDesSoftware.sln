@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModeloDesSoftware.Repositor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfModuloDesSoftware", "WpfModuloDesSoftware\WpfModuloDesSoftware.csproj", "{3B058C5E-9F52-42CC-AF03-4DCE1ADB22D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiModuloDesSoftware", "ApiModuloDesSoftware\ApiModuloDesSoftware.csproj", "{05437714-10A1-4880-8814-A69C2EC83E95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3B058C5E-9F52-42CC-AF03-4DCE1ADB22D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B058C5E-9F52-42CC-AF03-4DCE1ADB22D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B058C5E-9F52-42CC-AF03-4DCE1ADB22D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05437714-10A1-4880-8814-A69C2EC83E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05437714-10A1-4880-8814-A69C2EC83E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05437714-10A1-4880-8814-A69C2EC83E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05437714-10A1-4880-8814-A69C2EC83E95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

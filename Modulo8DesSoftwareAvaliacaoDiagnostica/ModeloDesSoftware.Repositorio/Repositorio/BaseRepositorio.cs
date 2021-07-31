@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
+using ModeloDesSoftware.Repositorio.Context;
+using ModeloDesSoftware.Repositorio.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ModeloDesSoftware.Repositorio.Repositorio
 {

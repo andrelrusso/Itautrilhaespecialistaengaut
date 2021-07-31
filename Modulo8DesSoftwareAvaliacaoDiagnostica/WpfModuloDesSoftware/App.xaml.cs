@@ -39,10 +39,6 @@ namespace WpfModuloDesSoftware
             services.AddDbContext<EFContexto>(options =>
                options.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));
 
-            //     services.AddDbContext<DataContext>
-            //(options => options.UseSqlServer(
-            //            Configuration.GetConnectionString("SqlConnection")));
-
             services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
 
             services.AddTransient(typeof(MainWindow));
