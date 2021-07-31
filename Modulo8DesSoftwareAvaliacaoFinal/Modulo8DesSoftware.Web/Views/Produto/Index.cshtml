@@ -1,0 +1,60 @@
+﻿@model ProdutoViewModel
+@{
+    ViewData["Title"] = "Produto";
+}
+
+
+<div class="container-fluid">
+    <form asp-action="Cadastrar" method="post">
+        @*<input type="hidden" asp-for="@Model.IdProduto" />*@
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <label asp-for="@Model.IdProduto" class="control-label"></label>
+                    <input asp-for="@Model.IdProduto" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label asp-for="@Model.NomeProduto" class="control-label"></label>
+                    <input asp-for="@Model.NomeProduto" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label asp-for="@Model.Categoria" class="control-label"></label>
+                    <input asp-for="@Model.Categoria" class="form-control" />
+                </div>
+            </div>
+           
+        </div>
+      
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <label asp-for="@Model.QtdeEstoque" class="control-label"></label>
+                    <input asp-for="@Model.QtdeEstoque" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label asp-for="@Model.PrecoVenda" class="control-label"></label>
+                    <input asp-for="@Model.PrecoVenda" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-warning">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
