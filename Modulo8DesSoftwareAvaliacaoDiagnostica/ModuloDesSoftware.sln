@@ -11,6 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfModuloDesSoftware", "Wpf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiModuloDesSoftware", "ApiModuloDesSoftware\ApiModuloDesSoftware.csproj", "{05437714-10A1-4880-8814-A69C2EC83E95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scriptsBD", "scriptsBD", "{94444C37-BF93-423E-8F44-278456D21D81}"
+	ProjectSection(SolutionItems) = preProject
+		scriptsBD\scriptBD.sql = scriptsBD\scriptBD.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
